@@ -1,29 +1,27 @@
-<div id="top" class="navbar navbar-fixed-top">
- 	<div class="container-fluid">
-	  	<div class="row-fluid">
-	  		<a href="/"><img src="@routes.Assets.at("images/toplogo.png")" id="toplogo" /></a>
-	  		
-	  		<ul id="topmenu">
-	  			<li><a href="/">Home</a></li>
-	  			<li><a href="/streams">Streams</a></li>
-	  			<li><a href="#">Extractors</a></li>
-	  			<li><a href="/system">System</a></li>
+<!-- NOTIFICATIONS BADGE
+<a href="@routes.SystemController.index(0)">
+    <span class="badge badge-important" id="notification-badge"></span>
+</a>
+-->
 
-                <li>
-                    <a href="/system">
-                        <span class="badge badge-important" id="notification-badge"></span>
-                    </a>
-                </li>
-	  		</ul>
-
-	  		<div class="pull-right">
-	  			<input type="text" id="search"
-	  				autocomplete="off"
-	  				data-provide="typeahead"
-	  				data-source='["some stream", "a very looooooooooooooooooooooooooooooooooooooooooooooong stream", "oh look a user", "host.example.org"]' />
-	  		
-	  			<a href="/logout" id ="logout" class="btn btn-small btn-danger">Logout</a>
-	  		</div>
-	  	</div>
- 	</div>
+<div class="navbar navbar-inverse navbar-fixed-top">
+    <div class="container">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="/">
+                <img src="/assets/images/toplogo.png" />
+            </a>
+        </div>
+        <div class="collapse navbar-collapse">
+            <ul class="nav navbar-nav">
+                <li><a href="/">Home</a></li>
+                <li><a href="@routes.StreamsController.index()">Streams</a></li>
+                <li><a href="@routes.SystemController.index(0)">System</a></li>
+            </ul>
+        </div>
+    </div>
 </div>

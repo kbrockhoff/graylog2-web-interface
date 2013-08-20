@@ -8,7 +8,7 @@
 
 @main("System", views.html.system.sidebar(), "", currentUser) {
 
-    <div class="row-fluid">
+    <div class="row">
         <h2><i class="icon icon-random"></i> Notifications</h2>
         Notifications are triggered by Graylog2 and indicate a situation you need to act upon.
 
@@ -57,7 +57,7 @@
     </div>
 
 
-    <div class="row-fluid">
+    <div class="row">
         <h2><i class="icon icon-cogs"></i> Active system jobs</h2>
         A system job is a long-running task a graylog2-server node executes. Some jobs
         provide progress information or can be stopped.
@@ -85,7 +85,7 @@
         }
     </div>
 
-    <div class="row-fluid">
+    <div class="row">
         @partials.support.head_bubble("the-elasticsearch-cluster-status-explained")
 
         <h2><i class="icon icon-tasks"></i> ElasticSearch cluster</h2>
@@ -117,7 +117,7 @@
 
     </div>
 
-    <div class="row-fluid">
+    <div class="row">
         <h2><i class="icon icon-comments-alt"></i> Messages and notifications</h2>
 
         <table class="system-messages table table-striped table-hover table-condensed">

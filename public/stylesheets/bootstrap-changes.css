@@ -1,0 +1,15 @@
+.navbar-brand {
+    padding: 12px 15px;
+}
+
+.container {
+    max-width: 1800px;
+}
+
+.row {
+    margin-bottom: 15px;
+}
+
+.alert {
+    margin-bottom: 0px;
+}
